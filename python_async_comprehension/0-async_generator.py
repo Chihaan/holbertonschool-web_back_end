@@ -10,5 +10,4 @@ async def async_generator() -> AsyncGenerator[float, None]:
     """Yield ten random numbers between 0 and 10, one per second."""
     for _ in range(10):
         await asyncio.sleep(1)
-        time = random.uniform(0, 10)
-        yield time
+        yield random.uniform(0, 10)
